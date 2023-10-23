@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .wrap {
+            background-color: #ddd;
+            width: 350px;
+            height: 300px;
+        }
+
+        .wrap > div {
+            height: 300px;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            color: white;
+            text-align: center;
+        }
+
+        .wrap, .left-side, .center, .right-side {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pink {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: gold;
+        }
+
+        .left-side, .center {
+            flex-direction: column;
+        }
+
+        .right-side {
+            flex-direction: column-reverse;
+        }
+    </style>
+    
+</head>
+    
+<body>
+    <div class="wrap">
+        <div class="left-side">
+            <div class="box blue">A</div>
+            <div class="box pink">B</div>
+            <div class="box yellow">C</div>
+        </div>
+        <div class="center">
+            <div class="box blue">D</div>
+            <div class="box yellow">E</div>
+        </div>
+        <div class="right-side">
+            <div class="box blue">F</div>
+            <div class="box pink">G</div>
+            <div class="box yellow">H</div>
+        </div>
+    </div>
+    
+</body>
+    
+</html>
