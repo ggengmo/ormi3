@@ -1,0 +1,6 @@
+@charset 'utf-8';
+@import 'imported.css';
+
+p {
+  color: aqua;
+}
