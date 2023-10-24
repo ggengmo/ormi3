@@ -1,0 +1,8 @@
+# templates > blog > postlist.html
+
+{% for i in posts %}
+    <p>{{i.id}}</p>
+    <p>{{i.title}}</p>
+    <p>줄바꿈: {{i.content|linebreaks}}</p>
+    <hr>
+{% endfor %}
